@@ -1,4 +1,4 @@
-#Random Forest Loan Prediction Model
+**Random Forest Loan Prediction Model**
 
 **Overview**
 
