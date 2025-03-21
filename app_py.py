@@ -15,7 +15,7 @@ import numpy as np
 model = pickle.load(open('model.pkl', 'rb'))
 
 # Streamlit UI
-st.title("loan Prediction system (created by Abheet")
+st.title("loan Prediction system (created by Abheet)")
 st.write("Enter the features to get the recommendation.")
 
 # Input fields
