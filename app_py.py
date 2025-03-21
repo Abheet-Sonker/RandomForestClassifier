@@ -20,7 +20,7 @@ st.write("Enter the features to get the recommendation.")
 
 # Input fields
 Age = st.number_input("Age (in years)", min_value=0, max_value=200, value=30)
-Income 	 = st.number_input("Annual Income (in Rupee)", min_value=0, max_value=9999999999999, value=0)
+Income 	 = st.number_input("Annual Income (in thousand Rupee)", min_value=0, max_value=9999999999999, value=0)
 Family = st.number_input("Family members (in Number)", min_value=0, max_value=100, value=1)
 CCAvg = st.number_input("CCAvg", min_value=0, max_value=100, value=0)
 Education = st.selectbox("Education level 1-12th,2-UG,3-PG", ["1", "2", "3"])
