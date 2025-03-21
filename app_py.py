@@ -34,10 +34,13 @@ if st.button("What is the chances that i can get loan"):
 
     # Make prediction
     prediction = model.predict(input_features)[0]
+    prediction_prob=model.predict_proba(input_features)[0]
+    prediction_prob_1=prediction_prob[1]
     result="Null"
     if prediction==0:
         result="No"
     else:
         result="Yes"
-    st.success(f": {result} ")
+    st.success(f": {result}, your chances of getting loan is {(prediction_prob_1)*100:.2f}%")
+    
 
