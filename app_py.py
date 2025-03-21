@@ -28,7 +28,7 @@ Mortgage 	= st.number_input("Mortage(in Rs)", min_value=0, max_value=999999, val
 SecuritiesAccount= st.selectbox("Have Security account(Yes-1, No-0)", ["0", "1"])
 CDAccount=st.selectbox("Have CD account(Yes-1, No-0)", ["0", "1"])
 # Predict button
-if st.button("What is the chances that i can get loan"):
+if st.button("Can i get loan and What is the chances that i can get loan"):
     # Prepare input for model
     input_features = np.array([[Age, Income, Family, CCAvg, Education, Mortgage, SecuritiesAccount, CDAccount]])
 
