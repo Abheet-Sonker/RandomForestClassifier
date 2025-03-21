@@ -33,6 +33,11 @@ if st.button("What is the chances that i can get loan"):
     input_features = np.array([[Age, Income, Family, CCAvg, Education, Mortgage, SecuritiesAccount, CDAccount]])
 
     # Make prediction
-    prediction = model.predict_proba(input_features)[0]
-    st.success(f"There are: {prediction} chances that you can get a loan")
+    prediction = model.predict(input_features)[0]
+    result="Null"
+    if prediction==0:
+        result="No"
+    else:
+        result="Yes"
+    st.success(f": {result} ")
 
