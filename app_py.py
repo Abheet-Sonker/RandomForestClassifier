@@ -34,5 +34,5 @@ if st.button("What is the chances that i can get loan"):
 
     # Make prediction
     prediction = model.predict_proba(input_features)[0]
-    st.success(f"There are: {prediction[1]*100:.2f}% chances that you can get a loan")
+    st.success(f"There are: {prediction} chances that you can get a loan")
 
